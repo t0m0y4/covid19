@@ -1,0 +1,17 @@
+# Impedir que se pueda ver el listado de contenidos de un directorio
+
+Options All -Indexes
+
+# Url Amigables
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9_-]+)-([a-zA-Z0-9_-]+)$ index.php?action=$1&id=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)=([a-zA-Z0-9_-]+)$ index.php?action=$1&FE=$2 [L]
+
+#RewriteRule ^([a-zA-Z0-9_-]+)-([a-zA-Z0-9_-]+)$ index.php?action=$1&page=$2 [L]
+
+RewriteRule ^(\w+)$ index.php?action=$1 [L]

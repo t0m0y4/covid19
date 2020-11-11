@@ -1,0 +1,38 @@
+#title{
+  float:center;
+  font-weight: bold;
+}
+#content{
+  background: #f0f0f5;
+  border: 2px auto;
+  border-width: thin;
+  padding-bottom: 10px;
+}
+h5 {
+  font-weight: bold;
+}
+p{
+  text-aling:justify;
+  text-justify:inter-word;
+}
+#back{
+  float:left;
+  width: 100px;
+  color:white;
+  font-weight: bold;
+}
+#foward{
+  float:right;
+  color:white;
+  font-weight: bold;
+}
+#detalles{
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+body{
+  background-image: url("../img/health.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}

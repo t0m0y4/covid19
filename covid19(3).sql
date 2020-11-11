@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 24, 2020 at 06:49 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.3.22
+-- Generation Time: Oct 14, 2020 at 06:04 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.3.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -90,7 +91,7 @@ CREATE TABLE `Preguntas` (
 --
 
 INSERT INTO `Preguntas` (`id`, `num_pregunta`, `preguntas`, `tipo_de_preguntas`, `respuestas_a_generar`, `encuesta_id`, `estado`) VALUES
-(6, 1, '¿Cuál ha sido su lugar de residencia en los ultimos 15 dias?', 'ddown', 'Seleccionar Residencia,Bluefields,Tortugero,Corn Island,Cruz de Rio Grande,Kukara Hill,Rama Key,San Francisco,Laguna de Perlas,Muelle de los Bueyes', 1, 0),
+(6, 1, '¿Cuál ha sido su lugar de residencia en los ultimos 15 dias?', 'ddown', 'Seleccionar Residencia,Bluefields,Tortugero,Corn Island,Cruz de Rio Grande,Kukara Hill,Rama Key,San Francisco,Laguna de Perlas,Muelle de los Bueyes', 1, 1),
 (7, 2, '¿Viene de la parte Rural o Urbano?', 'radio', 'Rural(Comunidad)_1,Urbano(Ciudad)_2', 1, 1),
 (8, 3, 'Rango con que grupo de edad se identifica', 'ddown', 'Seleccionar,0-9_5,10-19_5,20-29_5,30-39_5,40-49_10,50-59_15,60-69_20,70-79_25,80-89_40,90-99_50,Mas de 100_50', 1, 1),
 (9, 4, '¿Cuál es su género?', 'radio', 'Masculino,Femenino', 1, 1),
